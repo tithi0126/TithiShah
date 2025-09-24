@@ -1,0 +1,24 @@
+/* New Theme Variables */
+:root {
+    --background-primary: #FDF8F0; /* A soft, warm off-white */
+    --background-secondary: #F5E6D3; /* A slightly darker, warm beige for contrast */
+    --primary-brand: #6B8E23; /* Olive Green - vibrant and professional */
+    --text-primary: #36454F; /* Charcoal Grey - strong and readable */
+    --text-secondary: #5A6268; /* Medium Grey - for secondary information */
+    --surface-accent: #E0E0E0; /* Light Grey - for borders and subtle accents */
+    --white: #FFFFFF;
+    --black: #000000;
+    --error-color: #DC3545; /* A standard red for errors/private repos */
+}
+
+[data-theme="dark"] {
+    --background-primary: #1A1A2E; /* Dark blue/purple */
+    --background-secondary: #16213E; /* Slightly darker blue/purple */
+    --primary-brand: #E94560; /* Vibrant pink/red */
+    --text-primary: #E0E0E0; /* Light grey */
+    --text-secondary: #B0B0B0; /* Lighter grey */
+    --surface-accent: #303040; /* Darker grey for accents */
+    --white: #FFFFFF;
+    --black: #000000;
+    --error-color: #FF6B6B; /* A slightly brighter red for dark theme */
+}
