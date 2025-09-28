@@ -1,30 +1,17 @@
 {
-  "name": "tithi_portfolio",
+  "name": "portfolio-server",
   "version": "1.0.0",
   "type": "module",
+  "main": "server.js",
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "server": "node server/server.js",
-    "dev:full": "concurrently \"npm run server\" \"npm run dev\""
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "framer-motion": "^10.16.4",
-    "react-hot-toast": "^2.4.1",
-    "prop-types": "^15.8.1",
     "express": "^4.18.2",
     "mongoose": "^8.0.3",
     "nodemailer": "^6.9.7",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.0",
-    "concurrently": "^8.2.0"
   }
 }

@@ -89,9 +89,7 @@ app.post('/api/contact', async (req, res) => {
     if (transporter) {
       try {
         const mailOptions = {
-          // from: 'jariwaladev14@gmail.com',
-          // from: 'tithishah.mscit@vnsgu.ac.in',
-          to: 'jariwaladev14@gmail.com',
+          to: 'tithishah26@gmail.com',
           subject: `New Contact Form Submission from ${name} through Portfolio`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px;">
