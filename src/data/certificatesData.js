@@ -19,7 +19,7 @@ const certificatesData = [
         skills: ["Career Development", "Software Skills", "Professional Growth"],
         file: "/certification/CertificateOfCompletion_Introduction to Career Skills in Software Development.pdf",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 3,
@@ -41,7 +41,7 @@ const certificatesData = [
         skills: ["Programming Basics", "Logic Building", "Problem Solving"],
         file: "/certification/CertificateOfCompletion_Programming Foundations Fundamentals.pdf",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ const certificatesData = [
         skills: ["WordPress", "CMS", "Web Development"],
         file: "/certification/Coursera WordPress.pdf",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ const certificatesData = [
         skills: ["Data Visualization", "Business Intelligence", "Analytics"],
         file: "/certification/Data Visualisation Empowering Business.pdf",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 7,
@@ -89,25 +89,25 @@ const certificatesData = [
     },
     {
         id: 9,
-        name: "General Tech Conference Participation",
+        name: "JavaScript Course ",
         issuer: "Tech Conference",
         category: "participation",
         date: "2023",
         skills: ["Networking", "Learning", "Professional Development"],
         file: "/certification/TITHI-SHAH-Participant-Certificate.pdf",
-        verified: false,
-        featured: false
+        verified: true,
+        featured: true
     },
     {
         id: 10,
         name: "e-Yantra Robotics Competition Attendance",
         issuer: "IIT Bombay",
         category: "participation",
-        date: "2023",
+        date: "2024",
         skills: ["Robotics", "IoT", "Teamwork"],
         file: "/certification/eyantra attandance certificate.pdf",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 11,
@@ -117,8 +117,8 @@ const certificatesData = [
         date: "2023",
         skills: ["C++", "Object-Oriented Programming", "Data Structures"],
         file: "/certification/TITHI-SHAH-Participant-Certificate_advanceCpp.pdf",
-        verified: false,
-        featured: false
+        verified: true,
+        featured: true
     },
     {
         id: 12,
@@ -128,8 +128,8 @@ const certificatesData = [
         date: "2023",
         skills: ["HTML", "Web Development", "Frontend"],
         file: "/certification/TITHI-SHAH-Participant-Certificate_html.pdf",
-        verified: false,
-        featured: false
+        verified: true,
+        featured: true
     },
     {
         id: 13,
@@ -139,8 +139,8 @@ const certificatesData = [
         date: "2023",
         skills: ["Computer Fundamentals", "Basic IT", "Software"],
         file: "/certification/TITHI-SHAH-Participant-Certificate_intro_to computer.pdf",
-        verified: false,
-        featured: false
+        verified: true,
+        featured: true
     },
     {
         id: 14,
@@ -150,8 +150,8 @@ const certificatesData = [
         date: "2023",
         skills: ["Java", "Object-Oriented Programming", "Backend"],
         file: "/certification/TITHI-SHAH-Participant-Certificate_Java.pdf",
-        verified: false,
-        featured: false
+        verified: true,
+        featured: true
     },
     {
         id: 15,
@@ -161,8 +161,8 @@ const certificatesData = [
         date: "2023",
         skills: ["JavaScript", "Web Development", "Frontend"],
         file: "/certification/TITHI-SHAH-Participant-Certificate_js.pdf",
-        verified: false,
-        featured: false
+        verified: true,
+        featured: true
     },
     {
         id: 16,
@@ -172,8 +172,8 @@ const certificatesData = [
         date: "2023",
         skills: ["RDBMS", "SQL", "Database Management"],
         file: "/certification/TITHI-SHAH-Participant-Certificate_rdbms.pdf",
-        verified: false,
-        featured: false
+        verified: true,
+        featured: true
     },
     {
         id: 17,
@@ -183,8 +183,8 @@ const certificatesData = [
         date: "2023",
         skills: ["Professional Skills", "Industry Knowledge"],
         file: "/certification/tcsIon.jpg",
-        verified: false,
-        featured: false
+        verified: true,
+        featured: true
     },
     {
         id: 18,
@@ -206,7 +206,7 @@ const certificatesData = [
         skills: ["Cloud Computing", "Security", "Operations", "Google Cloud"],
         file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6381513",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 20,
@@ -217,7 +217,7 @@ const certificatesData = [
         skills: ["Cloud Computing", "Application Modernization", "DevOps", "Google Cloud"],
         file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6373051",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 21,
@@ -228,7 +228,7 @@ const certificatesData = [
         skills: ["Data Analytics", "Cloud Computing", "Google Cloud", "Innovation"],
         file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6372299",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 22,
@@ -239,7 +239,7 @@ const certificatesData = [
         skills: ["Digital Transformation", "Cloud Computing", "Google Cloud", "Business Strategy"],
         file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6371978",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 23,
@@ -250,7 +250,7 @@ const certificatesData = [
         skills: ["Responsible AI", "AI Ethics", "Machine Learning", "Google Cloud"],
         file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6371611",
         verified: true,
-        featured: false
+        featured: true
     },
     {
         id: 24,
@@ -261,7 +261,40 @@ const certificatesData = [
         skills: ["Generative AI", "AI/ML", "Machine Learning", "Google Cloud"],
         file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6187089",
         verified: true,
-        featured: false
+        featured: true
+    },
+    {
+        id: 25,
+        name: "e-Yantra Robotics Competition",
+        issuer: "IIT Bombay",
+        category: "competition",
+        date: "2023-2024",
+        skills: ["Robotics", "Competition", "Engineering"],
+        file: "/certification/E-yantra.png",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 26,
+        name: "SIH Internal Hackathon",
+        issuer: "College/University",
+        category: "competition",
+        date: "2025",   
+        skills: ["Hackathon", "Innovation", "Problem Solving"],
+        file: "/certification/sih_internal_hackathon.jpg",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 27,
+        name: " e-Yantra Online Course on Innovation and Entrepreneurship, MOOC",
+        issuer: "University/College",
+        category: "academic",
+        date: "2024",
+        skills: ["Academic Achievement", "Coursework"],
+        file: "/certification/Tithi Jimmy Shah_16034.pdf",
+        verified: true,
+        featured: true
     }
 ];
 
@@ -277,6 +310,7 @@ export const categoriesData = [
     { id: 'professional', label: 'Professional', icon: 'fas fa-briefcase' },
     { id: 'ai', label: 'AI/ML', icon: 'fas fa-brain' },
     { id: 'cloud', label: 'Cloud Computing', icon: 'fas fa-cloud' },
+    { id: 'academic', label: 'Academic', icon: 'fas fa-graduation-cap' },
 ];
 
 export default certificatesData;
