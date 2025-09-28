@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './', // Ensure assets are loaded correctly when deployed to a subpath
   plugins: [react()],
   server: {
     proxy: {
