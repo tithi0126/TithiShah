@@ -117,16 +117,14 @@ const Contact = () => {
         
         setIsSubmitting(true);
         try {
-                    console.log("before api call");
-
-            const response = await fetch(' http://localhost:3000/api/contact', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(formData),
-});
-                    console.log("after api call");
+            const response = await fetch(' https://tithishah-backend.onrender.com/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+                }
+            );
 
             const data = await response.json();
             console.log("recieved data :"+data);
