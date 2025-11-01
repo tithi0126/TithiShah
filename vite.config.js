@@ -5,12 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: './', // Ensure assets are loaded correctly when deployed to a subpath
   plugins: [react()],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:5000', // Changed from 5000 to 3000
-        changeOrigin: true,
-      },
-    },
-  },
+   preview: {
+    allowedHosts: ['tithishah.onrender.com'],
+    port: process.env.PORT || 5173,
+    host: true
+  }
 })
