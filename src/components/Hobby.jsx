@@ -4,34 +4,34 @@ import React, { useState, useRef, useEffect } from 'react';
 
 const Hobby = () => {
   const singingAudios = [
-    { name: 'Aaj Din Chadheya', path: '/Hobby/Singing/aaj din chadheya.mp3' },
-    // { name: 'Aaj Jane Ki Zidd Na Karo (opus)', path: '/Hobby/Singing/aaj jane ki zidd na karo .opus' },
-    { name: 'Aaj Jane Ki Zidd Na Karo', path: '/Hobby/Singing/aaj jane ki zidd na karo.opus' },
-    { name: 'Ae Re Sakhi', path: '/Hobby/Singing/ae_re_sakhi.mp4' },
+    { name: 'Aaj Din Chadheya', path: '/Hobby/Singing/aaj_din_chadheya.mp3' },
+    { name: 'Aaj Jane Ki Zidd Na Karo', path: '/Hobby/Singing/aaj_jane_ki_zidd_na_karo.opus' },
+    { name: 'Aise Kyun', path: '/Hobby/Singing/aise_kyun.opus' },
     { name: 'Apki Akho Me Kuch', path: '/Hobby/Singing/apki_akho_me kuch.mp3' },
-    // { name: 'Tu Aisa Kaise Hai', path: '/Hobby/Singing/arjun_birthday.mp4' },
-    { name: 'Bole Chudiyan', path: '/Hobby/Singing/Bole Chudiyan.mp3' },
+    { name: 'Bole Chudiyan', path: '/Hobby/Singing/Bole_Chudiyan.mp3' },
     { name: 'Bolo Na', path: '/Hobby/Singing/bolo_na.mp3' },
-    { name: 'Bus Itna Hai Tum Se Kehna', path: '/Hobby/Singing/Bus itna hai tum se kehna.mp3' },
+    { name: 'Bus Itna Hai Tum Se Kehna', path: '/Hobby/Singing/Bus_itna_hai_tum_se_kehna.mp3' },
     { name: 'Dagabaazre', path: '/Hobby/Singing/dagabaazre.mp3' },
-    { name: 'Dekha Hazaro Dafa', path: '/Hobby/Singing/Dekha Hazaro dafa.mp3' },
+    { name: 'Dekha Hazaro Dafa', path: '/Hobby/Singing/dekha_hazaro_dafa.mp3' },
+    { name: 'Dil Da Vasta', path: '/Hobby/Singing/dil_da_vasta.mp3' },
     { name: 'Ekadantaya Vakratundaya', path: '/Hobby/Singing/Ekadantaya_Vakratundaya.mp3' },
-    { name: 'Kaise Ab Kahein', path: '/Hobby/Singing/kaise ab kahein.mp3' },
-    { name: 'Kaun Tujhe', path: '/Hobby/Singing/Kaun Tujhe.mp3' },
-    { name: 'Khuda Jane', path: '/Hobby/Singing/Khuda jane.mp3' },
-    { name: 'Mora Saiyaan', path: '/Hobby/Singing/Mora Saiyaan.mp3' },
+    { name: 'Finding Him', path: '/Hobby/Singing/finding_him.m4a' },
+    { name: 'Hum Tere Pyar Me', path: '/Hobby/Singing/hum_tere_pyar_me.m4a' },
+    { name: 'Kaise Ab Kahe', path: '/Hobby/Singing/kaise_ab_kahe.mp3' },
+    { name: 'Kaun Tujhe', path: '/Hobby/Singing/Kaun_Tujhe.mp3' },
+    { name: 'Khuda Jane Ke', path: '/Hobby/Singing/khuda_jane_ke.mp3' },
+    { name: 'Main Rahu Ya Na Rahu', path: '/Hobby/Singing/main_rahu_ya_na_rahu.mp3' },
+    { name: 'Mora Saiyaan', path: '/Hobby/Singing/Mora_Saiyaan.mp3' },
     { name: 'O Sajni Re', path: '/Hobby/Singing/o_sajni_re.mp3' },
-    { name: 'Ram Ratan Dhan Payo', path: '/Hobby/Singing/ram ratan dhan payo.mp3' },
-    // { name: 'Ram Ratan', path: '/Hobby/Singing/ram_ratan.mp4' },
+    { name: 'Ram Ratan Dhan Payo', path: '/Hobby/Singing/ram_ratan_dhan_payo.mp3' },
     { name: 'Sajni Re', path: '/Hobby/Singing/sajni_re.mp3' },
-    { name: 'Tere Hawale', path: '/Hobby/Singing/tere hawale.mp4' },
-    { name: 'Tu Aisa Kese Hai', path: '/Hobby/Singing/tu aisa kese hai.mp3' },
+    { name: 'Savan Beeto Jai', path: '/Hobby/Singing/savan_beeto_jai.mp3' },
+    { name: 'Tere Hawale', path: '/Hobby/Singing/tere_hawale.mp3' },
+    { name: 'Tu Aisa Kese Hai', path: '/Hobby/Singing/tu_aisa_kese_hai.mp3' },
     { name: 'Tumtak', path: '/Hobby/Singing/tumtak.mp3' },
-    { name: 'Vida Karo', path: '/Hobby/Singing/Vida karo.mp3' },
-    // { name: 'Vo Dekhne Me', path: '/Hobby/Singing/Vo_dekhne_me.mp4' },
-    // { name: 'WhatsApp Video 2024-08-14 at 18.01.30', path: '/Hobby/Singing/WhatsApp Video 2024-08-14 at 18.01.30_ffc431f0.mp4' },
-    { name: 'Wo Dekhne Me', path: '/Hobby/Singing/Wo dekhne me.mp3' },
-    { name: 'Yeh Dil Tum Bin Kahin Lagtaa Nahii', path: '/Hobby/Singing/Yeh dil tum bin kahin lagtaa nahii.mp3' },
+    { name: 'Vida Karo', path: '/Hobby/Singing/Vida_karo.mp3' },
+    { name: 'Wo Dekhne Me', path: '/Hobby/Singing/Wo_dekhne_me.mp3' },
+    { name: 'Ye Dil Tum Bin', path: '/Hobby/Singing/ye_dil_tum_bin.mp3' },
   ];
 
   const [currentAudio, setCurrentAudio] = useState(null);
@@ -137,10 +137,6 @@ const Hobby = () => {
               {/* Now Playing Section - Only show below the currently playing song */}
               {currentAudio && currentAudio.path === audio.path && (
                 <div className="current-player-inline">
-                  <div className="now-playing">
-                    <h4>Now Playing</h4>
-                    <p className="current-song-name">{currentAudio.name}</p>
-                  </div>
                   <audio 
                     ref={audioRef} 
                     controls 
