@@ -1,0 +1,316 @@
+const certificatesData = [
+    {
+        id: 1,
+        name: "Career Essentials in Software Development",
+        issuer: "Microsoft and LinkedIn",
+        category: "development",
+        date: "2024",
+        skills: ["Software Development", "Programming", "Career Skills"],
+        file: "/certification/CertificateOfCompletion_Career Essentials in Software Development by Microsoft and LinkedIn.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 2,
+        name: "Introduction to Career Skills in Software Development",
+        issuer: "Microsoft and LinkedIn",
+        category: "development",
+        date: "2024",
+        skills: ["Career Development", "Software Skills", "Professional Growth"],
+        file: "/certification/CertificateOfCompletion_Introduction to Career Skills in Software Development.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 3,
+        name: "Programming Foundations Beyond the Fundamentals",
+        issuer: "Microsoft and LinkedIn",
+        category: "programming",
+        date: "2024",
+        skills: ["Advanced Programming", "Data Structures", "Algorithms"],
+        file: "/certification/CertificateOfCompletion_Programming Foundations Beyond the Fundamentals.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 4,
+        name: "Programming Foundations Fundamentals",
+        issuer: "Microsoft and LinkedIn",
+        category: "programming",
+        date: "2024",
+        skills: ["Programming Basics", "Logic Building", "Problem Solving"],
+        file: "/certification/CertificateOfCompletion_Programming Foundations Fundamentals.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 5,
+        name: "WordPress Development Course Completion",
+        issuer: "Coursera",
+        category: "web",
+        date: "2023",
+        skills: ["WordPress", "CMS", "Web Development"],
+        file: "/certification/Coursera WordPress.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 6,
+        name: "Data Visualisation for Business Empowerment",
+        issuer: "Professional Institute",
+        category: "data",
+        date: "2023",
+        skills: ["Data Visualization", "Business Intelligence", "Analytics"],
+        file: "/certification/Data Visualisation Empowering Business.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 7,
+        name: "e-Yantra Innovation Online Course",
+        issuer: "IIT Bombay",
+        category: "innovation",
+        date: "2023",
+        skills: ["Innovation", "Research", "Technology"],
+        file: "/certification/e-Yantra Online Course on Innovation.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 8,
+        name: "EY Techathon Participation Certificate",
+        issuer: "EY (Ernst & Young)",
+        category: "competition",
+        date: "2023",
+        skills: ["Problem Solving", "Innovation", "Team Collaboration"],
+        file: "/certification/EY Techathon.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 9,
+        name: "JavaScript Course ",
+        issuer: "Tech Conference",
+        category: "participation",
+        date: "2023",
+        skills: ["Networking", "Learning", "Professional Development"],
+        file: "/certification/TITHI-SHAH-Participant-Certificate.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 10,
+        name: "e-Yantra Robotics Competition Attendance",
+        issuer: "IIT Bombay",
+        category: "participation",
+        date: "2024",
+        skills: ["Robotics", "IoT", "Teamwork"],
+        file: "/certification/eyantra attandance certificate.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 11,
+        name: "Advanced C++ Programming Course",
+        issuer: "Online Course",
+        category: "programming",
+        date: "2023",
+        skills: ["C++", "Object-Oriented Programming", "Data Structures"],
+        file: "/certification/TITHI-SHAH-Participant-Certificate_advanceCpp.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 12,
+        name: "HTML Web Development Course",
+        issuer: "Online Course",
+        category: "web",
+        date: "2023",
+        skills: ["HTML", "Web Development", "Frontend"],
+        file: "/certification/TITHI-SHAH-Participant-Certificate_html.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 13,
+        name: "Introduction to Computers Course",
+        issuer: "Online Course",
+        category: "programming",
+        date: "2023",
+        skills: ["Computer Fundamentals", "Basic IT", "Software"],
+        file: "/certification/TITHI-SHAH-Participant-Certificate_intro_to computer.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 14,
+        name: "Java Programming Course",
+        issuer: "Online Course",
+        category: "programming",
+        date: "2023",
+        skills: ["Java", "Object-Oriented Programming", "Backend"],
+        file: "/certification/TITHI-SHAH-Participant-Certificate_Java.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 15,
+        name: "JavaScript Programming Course",
+        issuer: "Online Course",
+        category: "programming",
+        date: "2023",
+        skills: ["JavaScript", "Web Development", "Frontend"],
+        file: "/certification/TITHI-SHAH-Participant-Certificate_js.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 16,
+        name: "RDBMS Fundamentals Course",
+        issuer: "Online Course",
+        category: "data",
+        date: "2023",
+        skills: ["RDBMS", "SQL", "Database Management"],
+        file: "/certification/TITHI-SHAH-Participant-Certificate_rdbms.pdf",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 17,
+        name: "TCS iON Career Skills Program",
+        issuer: "TCS iON",
+        category: "professional",
+        date: "2023",
+        skills: ["Professional Skills", "Industry Knowledge"],
+        file: "/certification/tcsIon.jpg",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 18,
+        name: "Introduction to Large Language Models",
+        issuer: "Google Cloud Skills Boost",
+        category: "ai",
+        date: "2023",
+        skills: ["Large Language Models", "AI/ML", "Cloud Computing"],
+        file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6185201",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 19,
+        name: "Understanding Google Cloud Security and Operations",
+        issuer: "Google Cloud Skills Boost",
+        category: "cloud",
+        date: "2023",
+        skills: ["Cloud Computing", "Security", "Operations", "Google Cloud"],
+        file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6381513",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 20,
+        name: "Infrastructure and Application Modernization with Google Cloud",
+        issuer: "Google Cloud Skills Boost",
+        category: "cloud",
+        date: "2023",
+        skills: ["Cloud Computing", "Application Modernization", "DevOps", "Google Cloud"],
+        file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6373051",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 21,
+        name: "Innovating with Data and Google Cloud",
+        issuer: "Google Cloud Skills Boost",
+        category: "data",
+        date: "2023",
+        skills: ["Data Analytics", "Cloud Computing", "Google Cloud", "Innovation"],
+        file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6372299",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 22,
+        name: "Digital Transformation with Google Cloud",
+        issuer: "Google Cloud Skills Boost",
+        category: "cloud",
+        date: "2023",
+        skills: ["Digital Transformation", "Cloud Computing", "Google Cloud", "Business Strategy"],
+        file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6371978",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 23,
+        name: "Introduction to Responsible AI",
+        issuer: "Google Cloud Skills Boost",
+        category: "ai",
+        date: "2023",
+        skills: ["Responsible AI", "AI Ethics", "Machine Learning", "Google Cloud"],
+        file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6371611",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 24,
+        name: "Introduction to Generative AI",
+        issuer: "Google Cloud Skills Boost",
+        category: "ai",
+        date: "2023",
+        skills: ["Generative AI", "AI/ML", "Machine Learning", "Google Cloud"],
+        file: "https://www.cloudskillsboost.google/public_profiles/cc6552e3-a70a-4d74-968d-aa46c07d8ef2/badges/6187089",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 25,
+        name: "e-Yantra Robotics Competition",
+        issuer: "IIT Bombay",
+        category: "competition",
+        date: "2023-2024",
+        skills: ["Robotics", "Competition", "Engineering"],
+        file: "/certification/E-yantra.png",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 26,
+        name: "SIH Internal Hackathon",
+        issuer: "College/University",
+        category: "competition",
+        date: "2025",   
+        skills: ["Hackathon", "Innovation", "Problem Solving"],
+        file: "/certification/sih_internal_hackathon.jpg",
+        verified: true,
+        featured: true
+    },
+    {
+        id: 27,
+        name: " e-Yantra Online Course on Innovation and Entrepreneurship, MOOC",
+        issuer: "University/College",
+        category: "academic",
+        date: "2024",
+        skills: ["Academic Achievement", "Coursework"],
+        file: "/certification/Tithi Jimmy Shah_16034.pdf",
+        verified: true,
+        featured: true
+    }
+];
+
+export const categoriesData = [
+    { id: 'all', label: 'All Certificates', icon: 'fas fa-certificate' },
+    { id: 'development', label: 'Development', icon: 'fas fa-code' },
+    { id: 'programming', label: 'Programming', icon: 'fas fa-laptop-code' },
+    { id: 'innovation', label: 'Innovation', icon: 'fas fa-lightbulb' },
+    { id: 'competition', label: 'Competitions', icon: 'fas fa-trophy' },
+    { id: 'web', label: 'Web Development', icon: 'fas fa-globe' },
+    { id: 'data', label: 'Data & Analytics', icon: 'fas fa-database' },
+    { id: 'participation', label: 'Participation', icon: 'fas fa-users' },
+    { id: 'professional', label: 'Professional', icon: 'fas fa-briefcase' },
+    { id: 'ai', label: 'AI/ML', icon: 'fas fa-brain' },
+    { id: 'cloud', label: 'Cloud Computing', icon: 'fas fa-cloud' },
+    { id: 'academic', label: 'Academic', icon: 'fas fa-graduation-cap' },
+];
+
+export default certificatesData;

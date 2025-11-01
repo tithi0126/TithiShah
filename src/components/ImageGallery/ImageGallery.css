@@ -1,0 +1,76 @@
+:root {
+    --background-color: #f8f0e3; /* Cream */
+    --text-color: #333;
+    --accent-color: #a0522d; /* Sienna */
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-image: url('../public/business_model_rootout.jpg'); /* Replace with actual texture image */
+    background-size: cover;
+}
+
+.gallery-section {
+    background-image: url('../public/iitb_eyantra_innervoice1.jpg');
+    background-size: cover;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-thumbnail {
+    border: 2px solid #a0522d;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.image-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+.image-detail img {
+    max-width: 500px;
+    max-height: 500px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+}
